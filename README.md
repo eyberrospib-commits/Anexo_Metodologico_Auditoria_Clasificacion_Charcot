@@ -8,10 +8,21 @@ Este repositorio contiene el **código fuente completo** y la **auditoría metod
 
 ## 🔑 ELEMENTO CRÍTICO CITADO EN MANUSCRITO
 
-### **TABLA 4: Validación de Muestra** ⚠️
+### **TABLA 4: Validación de Muestra - 60 Artículos Codificados** ⚠️
 **Ubicación:** Al inicio del notebook `PIPELINE_CONSOLIDADO.ipynb` (primeras celdas de texto)
 
-Contiene la clasificación manual de los evaluadores **E** y **T**, utilizada para la validación de confiabilidad interobservador (Cohen's Kappa = 0.314).
+Contiene la **lista codificada de los 60 artículos de la muestra** con la clasificación manual de los evaluadores **E** y **T**, utilizada para la validación de confiabilidad interobservador (Cohen's Kappa = 0.314).
+
+---
+
+## 🚀 Acceso Rápido
+
+### **Google Colab (Recomendado)**
+Abre directamente en Colab sin instalar nada:
+
+👉 **[https://colab.research.google.com/drive/1fkA8zNanziYqBQqOJy9AGbWMOx5WecZc?usp=sharing](https://colab.research.google.com/drive/1fkA8zNanziYqBQqOJy9AGbWMOx5WecZc?usp=sharing)**
+
+*(Cualquier persona con el enlace puede visualizar)*
 
 ---
 
@@ -37,6 +48,7 @@ El pipeline utiliza los siguientes archivos de datos:
 Notebook Jupyter que contiene:
 - Carga y procesamiento de todas las bases de datos
 - Auditoría completa de clasificación Charcot
+- **TABLA 4: Lista codificada de 60 artículos validados**
 - Validación estadística de resultados
 - Generación de análisis y visualizaciones
 - Cálculo de métricas de confiabilidad
@@ -46,6 +58,9 @@ Notebook Jupyter que contiene:
 ## 📖 Cómo Usar Este Código
 
 ### Opción 1: Ver en Google Colab (Recomendado - Sin instalación)
+**👉 [Abrir en Colab](https://colab.research.google.com/drive/1fkA8zNanziYqBQqOJy9AGbWMOx5WecZc?usp=sharing)**
+
+### Opción 2: Desde GitHub a Colab
 1. Ve a https://colab.research.google.com/
 2. Selecciona `Archivo` → `Abrir notebook`
 3. Pega esta URL:
@@ -54,7 +69,7 @@ Notebook Jupyter que contiene:
    ```
 4. ¡Colab lo abrirá automáticamente!
 
-### Opción 2: Descargar y Ejecutar Localmente
+### Opción 3: Descargar y Ejecutar Localmente
 1. Descarga `PIPELINE_CONSOLIDADO.ipynb` desde el repositorio
 2. Descarga todos los archivos de datos
 3. Coloca todo en la misma carpeta
@@ -63,7 +78,7 @@ Notebook Jupyter que contiene:
    jupyter notebook PIPELINE_CONSOLIDADO.ipynb
    ```
 
-### Opción 3: Clonar el Repositorio Completo
+### Opción 4: Clonar el Repositorio Completo
 ```bash
 git clone https://github.com/eyberrospib-commits/Anexo_Metodologico_Auditoria_Clasificacion_Charcot.git
 cd Anexo_Metodologico_Auditoria_Clasificacion_Charcot
@@ -76,12 +91,13 @@ jupyter notebook PIPELINE_CONSOLIDADO.ipynb
 
 El notebook ejecuta:
 
-1. **Carga de datos** desde las 7 fuentes de entrada
-2. **Procesamiento y limpieza** de bases de datos
-3. **Auditoría de clasificación** aplicando criterios Charcot
-4. **Validación cruzada** con clasificaciones manuales (TABLA 4)
-5. **Cálculo de métricas** (Cohen's Kappa, concordancia)
-6. **Generación de reportes** y visualizaciones
+1. **TABLA 4: Lista codificada de 60 artículos validados** (al inicio)
+2. **Carga de datos** desde las 7 fuentes de entrada
+3. **Procesamiento y limpieza** de bases de datos
+4. **Auditoría de clasificación** aplicando criterios Charcot
+5. **Validación cruzada** con clasificaciones manuales
+6. **Cálculo de métricas** (Cohen's Kappa = 0.314, concordancia)
+7. **Generación de reportes** y visualizaciones
 
 ---
 
@@ -117,21 +133,24 @@ pip install pandas numpy scikit-learn matplotlib seaborn openpyxl
 
 ✅ **Reproducible** - El pipeline es completamente replicable
 
-✅ **TABLA 4 disponible** - Al inicio del notebook `PIPELINE_CONSOLIDADO.ipynb`
+✅ **TABLA 4 disponible** - Al inicio del notebook con lista codificada de 60 artículos
+
+✅ **Google Colab disponible** - Acceso directo sin instalación
 
 ⚠️ **Nota importante:** El archivo PIPELINE_CONSOLIDADO.ipynb es muy grande (1.2 MB). Si GitHub no lo renderiza en el navegador, puedes:
 - Descargarlo directamente
-- Abrirlo en Colab (opción recomendada)
+- Abrirlo en Google Colab (opción recomendada)
 - Clonar el repositorio
 
 ---
 
 ## 🔍 Métricas de Validación
 
+- **Muestra validada:** 60 artículos codificados
 - **Universo de datos:** N = 464
 - **Métrica principal:** Cohen's Kappa = 0.314
 - **Evaluadores:** E y T
-- **Validación de muestra:** Incluida en `Validación de muestra.xlsx`
+- **Validación de muestra:** TABLA 4 (al inicio del notebook)
 
 ---
 
